@@ -1,0 +1,82 @@
+.navLogo img {
+  width: 250px;
+}
+
+.navbar {
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  /* background-color: aqua; */
+}
+
+.navLinks ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navLinks ul li {
+  margin: 0 30px;
+  font-family: "Fira Code", monospace;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.navLinks ul li:hover {
+  text-decoration: underline;
+  transform: scale(1.1);
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+  transition: 0.3s;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    padding: 20px;
+  }
+
+  .navLogo img {
+    width: 200px;
+  }
+
+  .navLinks {
+    position: absolute;
+    top: 100%;
+    left: 0%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    display: none;
+    padding: 20px 0;
+    z-index: 10;
+  }
+
+  .navLinks.active {
+    display: block;
+  }
+
+  .navLinks ul {
+    flex-direction: column;
+  }
+
+  .navLinks ul li {
+    margin: 15px 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+}

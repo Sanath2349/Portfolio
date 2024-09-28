@@ -1,0 +1,498 @@
+.heroContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+}
+
+.homeHero {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Fira Code", monospace;
+}
+
+.homeHero {
+  padding: 20px;
+}
+
+.homeIntro h3 {
+  font-size: 32px;
+  max-width: 530px;
+  font-family: "Fira Code", monospace;
+  margin: 10 0;
+  color: #abb2bf;
+}
+
+.homeIntro h3 span {
+  color: #c778dd;
+}
+
+.homeIntro h4 {
+  color: #abb2bf;
+  max-width: 460px;
+  font-size: 16px;
+  line-height: 25px;
+  margin: 0;
+  font-weight: 500;
+}
+
+.homeIntro button {
+  background-color: transparent;
+  color: white;
+  border: 1px solid #c778dd;
+  width: 148px;
+  height: 37px;
+  font-size: 16px;
+  font-family: "Fira Code", monospace;
+  margin: 25px 0;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.homeIntro button:hover {
+  border: 1px solid white;
+  color: #c778dd;
+  transform: scaleX(1.5) scaleY(1.5);
+}
+
+.homeImg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.homeImg img {
+  filter: blur(0.5px);
+}
+
+.homeImg h3 {
+  margin: 0;
+  border: 1px solid white;
+  padding: 10px;
+  color: #ced4da;
+  width: 390px;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.homeProjectSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  margin: 100px 0;
+}
+
+.homeProjectHeading {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 32px;
+  gap: 200px;
+  /* margin-top: 100px; */
+}
+
+.homeProjectHeading span {
+  color: #c778dd;
+}
+
+.homeProjectHeading h3 {
+  font-weight: 400;
+}
+
+.homeProjectHeading button {
+  margin-left: 100px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-family: "Fira Code", monospace;
+  color: white;
+  font-size: 20px;
+  font-weight: 200;
+  transition: 1s;
+}
+
+.homeProjectHeading button:hover {
+  border: 1px solid #c778dd;
+  transform: scaleX(1.2);
+}
+
+.line {
+  width: 600px;
+  height: 1px;
+  color: #c778dd;
+  background-color: #c778dd;
+}
+
+.lineheading {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.homeprojectbox img {
+  width: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+.homeProjectBoxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 200px;
+  color: #abb2bf;
+  margin: 0;
+  padding: 0;
+}
+
+.homeprojectbox {
+  border: 1px solid #abb2bf;
+  transition: 1s;
+}
+
+.homeprojectbox h4 {
+  border: 1px solid #abb2bf;
+  margin: 0;
+  padding: 8px;
+}
+
+.homeProjectTitle {
+  color: white;
+  font-size: 22px;
+  margin: 10px;
+  font-weight: 500;
+}
+
+.homeprojectheading p {
+  font-size: 15px;
+  margin: 5px 10px;
+}
+
+.homeprojectbox a {
+  color: white;
+  list-style: none;
+  padding: 3px 20px;
+  margin: 10px;
+  border: 1px solid #c778dd;
+  background-color: transparent;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.homeprojectbox:hover {
+  transform: scale(1.1);
+  box-shadow: 6px 6px 15px white;
+}
+
+.homeprojectbox a:hover {
+  background-color: #c778dd;
+  color: white;
+}
+
+.homeProjectLink {
+  padding: 10px 0;
+}
+
+/* skills css */
+
+.homeSkillsSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  margin: 100px 0;
+  font-family: "Fira Code", monospace;
+}
+
+.homeSkillsHeading {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 32px;
+  gap: 30px;
+  margin-right: 800px;
+}
+
+.homeSkillsHeading span {
+  color: #c778dd;
+}
+
+.homeSkillsHeading h3 {
+  font-weight: 400;
+}
+
+.skillsline {
+  width: 230px;
+  height: 1px;
+  color: #c778dd;
+  background-color: #c778dd;
+}
+
+.homeskillsContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 90px;
+}
+
+.homeskillsgrid {
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-template-areas:
+    "skill1 skill2 skill3"
+    "skill1 skill2 skill4";
+  gap: 20px;
+}
+
+.homeskill {
+  max-width: 210px;
+  border: 1px solid #abb2bf;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  word-break: break-all; /* Alternatively, you can use this */
+  overflow-wrap: break-word;
+  /* justify-content: space-between; */
+  transition: 0.5s;
+}
+
+.homeskill:hover {
+  transform: scale(1.2);
+}
+
+.homeskill h2 {
+  margin: 0;
+  border: 1px solid #abb2bf;
+  padding: 5px 5px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.homeskill p {
+  font-size: 14px;
+  margin-left: 5px;
+  font-weight: lighter;
+  color: #abb2bf;
+}
+/* Assign each skill to its grid area */
+.skill1 {
+  grid-area: skill1;
+  height: 100px;
+}
+
+.skill2 {
+  grid-area: skill2;
+  height: 100px;
+}
+
+.skill3 {
+  grid-area: skill3;
+}
+
+.skill4 {
+  grid-area: skill4;
+}
+
+/* about me styles */
+.homeAboutme {
+  font-family: "Fira Code", monospace;
+}
+.homeAboutmeHeading {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 32px;
+  gap: 30px;
+  margin-right: 800px;
+  margin-left: 170px;
+}
+
+.homeAboutmeHeading h3 {
+  font-weight: 400;
+}
+
+.homeAboutmeHeading span {
+  color: #c778dd;
+}
+
+.homeAboutmeContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+.homeAboutmeContent {
+  max-width: 510px;
+  color: #abb2bf;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.homeAboutmeImage img {
+  width: 343px;
+  height: 508px;
+}
+
+/* contact styles */
+.homeContactsection {
+  font-family: "Fira Code", monospace;
+}
+
+.homeContactHeading {
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 32px;
+  gap: 30px;
+  margin-right: 800px;
+  margin-left: 170px;
+}
+
+.homeContactHeading h3 {
+  font-weight: 300;
+}
+
+.homeContactHeading span {
+  color: #c778dd;
+}
+
+.homeContactContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 80px 0;
+}
+
+.HomeContactContent {
+  width: 550px;
+  color: #abb2bf;
+  font-size: 18px;
+}
+
+.homeContactLinks {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  color: #abb2bf;
+  border: 1px solid #abb2bf;
+  padding: 20px;
+}
+
+.homeContactLinks h2 {
+  color: white;
+  font-size: 15px;
+}
+
+.homeContactLinks a {
+  text-decoration: none;
+  color: #abb2bf;
+  display: flex;
+  align-items: center;
+}
+
+/* responsive styles */
+@media screen and (max-width: 768px) {
+  .homeHero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .homeIntro {
+    width: 280px;
+  }
+
+  .homeImg h3 {
+    max-width: 80%;
+  }
+
+  .homeImg img{
+    width: 70%;
+  }
+  .homeQuote img {
+    width: 350px;
+  }
+
+  .homeProjectHeading {
+    width: 90%;
+    font-size: 24px;
+    gap: 0;
+    justify-content: space-between;
+  }
+
+  .line {
+    width: 0;
+    display: none;
+  }
+  .homeProjectHeading button {
+    margin: 0;
+  }
+
+  .homeProjectBoxes {
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .homeprojectbox {
+    margin: 0 20px;
+    width: 70%;
+  }
+
+  .homeprojectbox img {
+    width: 100%;
+  }
+
+  .homeSkillsHeading {
+    width: 80%;
+    gap: 0;
+    margin: 0;
+  }
+
+  /* .homeSkillsHeading h3{
+    text-align:start;
+  } */
+
+  .skillsline {
+    width: 0;
+    display: none;
+  }
+
+  .homeskillsContainer {
+    flex-direction: column;
+  }
+
+  .homeskillsimage {
+    display: none;
+  }
+  .homeskillsgrid {
+    display: flex;
+    flex-direction: column;
+  }
+  .homeAboutmeHeading {
+    margin: 0;
+    width: 90%;
+  }
+
+  .homeAboutmeHeading h3{
+    text-align: start;
+    margin-left: 30px;
+  }
+
+  .homeAboutmeContent{
+    width: 80%;
+  }
+
+  .homeContactHeading{
+    margin: 0;
+  }
+  .homeContactHeading h3{
+    margin-left: 30px;
+  }
+  .HomeContactContent{
+    width: 80%;
+  }
+}
